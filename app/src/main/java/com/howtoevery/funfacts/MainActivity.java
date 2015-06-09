@@ -15,6 +15,8 @@ import java.util.Random;
 
 public class MainActivity extends ActionBarActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Creating the random
@@ -34,10 +36,16 @@ public class MainActivity extends ActionBarActivity {
         View.OnClickListener myListener = new View.OnClickListener() {
 
             int randomNumber;
+            int currentState = 0;
 
             @Override
             public void onClick(View view) {
-                randomNumber = rand.nextInt(1); // randomNumber will be 0 or 1
+
+                do {
+                    randomNumber = rand.nextInt(2); // randomNumber will be 0 or 1
+                }   while (currentState == randomNumber);
+
+                currentState = randomNumber;
 
                 switch (randomNumber) {
                     case 0: { // in case it is 0, show fact number 1 with green color
@@ -53,7 +61,7 @@ public class MainActivity extends ActionBarActivity {
                     } break;
                 }
 
-                factLabel.setText(randomNumber); // show the number generated with randomNumber, ONLY FOR DEBUG PURPOSES
+          //      factLabel.setText(String.valueOf(randomNumber)); // show the number generated with randomNumber, ONLY FOR DEBUG PURPOSES
 
             }
         };
