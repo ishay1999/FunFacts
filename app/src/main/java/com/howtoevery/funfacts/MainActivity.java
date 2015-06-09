@@ -68,6 +68,11 @@ public class MainActivity extends ActionBarActivity {
 
         showFactButton.setOnClickListener(myListener);
     }
+    public void setFact(int factString, int color) {
+        factLabel.setText(factString);
+        backGround.setBackgroundColor(getResources().getColor(color));
+        showFactButton.setTextColor(getResources().getColor(color));
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
