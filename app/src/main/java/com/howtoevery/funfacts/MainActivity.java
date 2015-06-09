@@ -49,15 +49,12 @@ public class MainActivity extends ActionBarActivity {
 
                 switch (randomNumber) {
                     case 0: { // in case it is 0, show fact number 1 with green color
-                        factLabel.setText(R.string.fact1);
-                        backGround.setBackgroundColor(getResources().getColor(R.color.android_green));
-                        showFactButton.setTextColor(getResources().getColor(R.color.android_green));
+                        setFact(R.string.fact1, R.color.android_green);
                     } break;
 
                     case 1: { // in case it is 1, show fact number 2 with orange color
-                        factLabel.setText(R.string.fact2);
-                        backGround.setBackgroundColor(getResources().getColor(R.color.orangish));
-                        showFactButton.setTextColor(getResources().getColor(R.color.orangish));
+                        setFact(R.string.fact2, R.color.orangish);
+
                     } break;
                 }
 
