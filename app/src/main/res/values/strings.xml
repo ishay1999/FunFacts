@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fun Facts</string>
+
+    <string name="fact1">Ants stretch when they wake up in the morning.</string>
+    <string name="fact2">Ostriches can run faster than horses.</string>
+    <string name="did_you_know">Did you know?</string>
+    <string name="action_settings">Settings</string>
+    <string name="next_fact">Show Another Fun Fact</string>
+</resources>
