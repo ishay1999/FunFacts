@@ -2,12 +2,12 @@ package com.howtoevery.funfacts;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Random;
 
@@ -83,12 +83,15 @@ public class MainActivity extends ActionBarActivity {
 
         showFactButton.setOnClickListener(myListener);
 
+        Log.i("FunFactsActivity", "A log output to the information level, woohoo!");
+
 //        String message = "Yay! bla bla";
 //        Toast welcomeToast = Toast.makeText(this, message, Toast.LENGTH_SHORT);
 //        welcomeToast.show();
-        
+
         // or in a shorter way:
-        Toast.makeText(this, "Yay! bla bla", Toast.LENGTH_SHORT).show();
+     //   Toast.makeText(this, "Yay! bla bla", Toast.LENGTH_SHORT).show();
+        // we don't need this toast anymore so it's commented out.
 
     }
 
