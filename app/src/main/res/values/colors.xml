@@ -11,4 +11,5 @@
     <color name="ugly_sea">#ff56b47e</color>
     <color name="gray">#ffa9b4ae</color>
 
+    <!-- needs to have a color for each fact, don't add or remove color without adding or removing a fact-->
 </resources>
