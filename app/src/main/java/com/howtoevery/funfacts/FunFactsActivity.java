@@ -12,7 +12,11 @@ import android.widget.TextView;
 import java.util.Random;
 
 
-public class MainActivity extends ActionBarActivity {
+public class FunFactsActivity extends ActionBarActivity {
+
+    final int testInt = 3;
+    public static final String TAG = FunFactsActivity.class.getSimpleName();
+
     // Creating the random
     Random rand = new Random();
 
@@ -83,7 +87,10 @@ public class MainActivity extends ActionBarActivity {
 
         showFactButton.setOnClickListener(myListener);
 
-        Log.i("FunFactsActivity", "A log output to the information level, woohoo!");
+        Log.i(TAG, "A log output to the information level, woohoo!");
+        Log.i(TAG, String.valueOf(testInt)); // output the int, good for checking for loops and something like this
+        // we can see this message from the log level of info and above
+        // we can also search in the logCat for "woohoo" or "FunFactsActivity".
 
 //        String message = "Yay! bla bla";
 //        Toast welcomeToast = Toast.makeText(this, message, Toast.LENGTH_SHORT);
