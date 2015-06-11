@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Fun Facts - עובדות</string>
-    <string name="action_settings">הגדרות</string>
-    <string name="did_you_know">הידעת?</string>
-    <string name="fact1">נמלים מתמתחות כשהן מתעוררות בבוקר.</string>
-    <string name="fact2">יען יכולה לרוץ יותר מהר מאשר סוס.</string>
-    <string name="next_fact">הצג עוד עובדה</string>
-</resources>

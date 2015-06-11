@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:text="@string/did_you_know"
         android:textColor="#64ffffff"
+        android:layout_alignParentRight="true"
         android:textSize="36sp" />
 
     <TextView

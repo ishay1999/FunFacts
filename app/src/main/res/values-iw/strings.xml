@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fun Facts - עובדות</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="did_you_know">הידעת?</string>
+    <string name="fact1">נמלים מתמתחות כשהן מתעוררות בבוקר.</string>
+    <string name="fact2">יען יכולה לרוץ יותר מהר מאשר סוס.</string>
+    <string name="next_fact">הצג עוד עובדה</string>
+    <string name="fact3">מדליות זהב באולימפיאדה עשויות בעיקר מכסף</string>
+    <string name="fact4">אדם נולד עם 300 עצמות, עד סוף חייך תישאר עם 206</string>
+    <string name="fact5">לאור מהשמש לוקח 8 דקות להגיע לכדור הארץ</string>
+    <string name="fact6">צמחי במבוק מסוימים מסוגלים לגדול כמעט מטר ביום אחד בלבד</string>
+    <string name="fact7">המדינה פלורידה יותר גדולה מאנגליה</string>
+    <string name="fact8">קיימים פינגווינים הומואים</string>
+    <string name="fact9">בממוצע, לוקח לאדם 66 ימים להסתגל להרגל חדש</string>
+    <string name="fact10">ממוטות עדיין הלכו על כדור הארץ בזמן שהפירמידות נבנו</string>
+</resources>

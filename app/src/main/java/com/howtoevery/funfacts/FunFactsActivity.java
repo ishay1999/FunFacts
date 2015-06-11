@@ -24,18 +24,6 @@ public class FunFactsActivity extends ActionBarActivity {
     Button showFactButton;
     ViewGroup backGround;
 
-    String[] facts = {
-            "Ants stretch when they wake up in the morning.",
-            "Ostriches can run faster than horses.",
-            "Olympic gold medals are actually made mostly of silver.",
-            "You are born with 300 bones; by the time you are an adult you will have 206.",
-            "It takes about 8 minutes for light from the Sun to reach Earth.",
-            "Some bamboo plants can grow almost a meter in just one day.",
-            "The state of Florida is bigger than England.",
-            "Some penguins can leap 2-3 meters out of the water.",
-            "On average, it takes 66 days to form a new habit.",
-            "Mammoths still walked the earth when the Great Pyramid was being built."};
-
     int[] colors = {
             R.color.orangish,
             R.color.android_green,
@@ -47,6 +35,19 @@ public class FunFactsActivity extends ActionBarActivity {
             R.color.gay_pink,
             R.color.bordo,
             R.color.red
+    };
+
+    int [] stringsResource = {
+            R.string.fact1,
+            R.string.fact2,
+            R.string.fact3,
+            R.string.fact4,
+            R.string.fact5,
+            R.string.fact6,
+            R.string.fact7,
+            R.string.fact8,
+            R.string.fact9,
+            R.string.fact10
     };
 
 
@@ -71,7 +72,7 @@ public class FunFactsActivity extends ActionBarActivity {
             public void onClick(View view) {
 
                 do {
-                    randomNumber = rand.nextInt(facts.length);
+                    randomNumber = rand.nextInt(colors.length);
                 } while (currentState == randomNumber);
 
                 //    setFact(facts[randomFact], colors[randomColor]);
@@ -79,7 +80,7 @@ public class FunFactsActivity extends ActionBarActivity {
 //                backGround.setBackgroundColor(getResources().getColor(colors[randomColor]));
 //                showFactButton.setTextColor(colors[randomColor]);
 
-                setFact(facts[randomNumber], colors[randomNumber]);
+                setFact(stringsResource[randomNumber], colors[randomNumber]);
 
                 currentState = randomNumber;
             }
@@ -102,7 +103,7 @@ public class FunFactsActivity extends ActionBarActivity {
 
     }
 
-    public void setFact(String factString, int color) {
+    public void setFact(int factString, int color) {
         factLabel.setText(factString);
         backGround.setBackgroundColor(getResources().getColor(color));
         showFactButton.setTextColor(getResources().getColor(color));
